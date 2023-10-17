@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <title>Document</title>
+  </head>
+  <body class="position-relative">
+    <nav
+      class="navbar navbar-expand-lg navbar-light w-100 position-fixed z-3"
+      style="background-color: #f1692f">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="#"
+          >MCI</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                >Khóa học</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                >Lịch đào tạo</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarScrollingDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Doanh Nghiệp
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarScrollingDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    >1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    >2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    >3</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <button
+            class="btn bg-white"
+            type="submit">
+            Đăng nhập
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main class="">
+      <section class="w-100 flex-1 mb-5">
+        <div class="w-100 position-relative d-flex justify-content-center align-items-center py-5 container">
+          <span class="d-flex position-absolute align-items-center h-full span-search">
+            <img
+              src="./assets/images/icons/search_icon.svg"
+              alt=""
+              class="h-50 w-50" />
+          </span>
+          <input
+            type="text"
+            name="input-search"
+            id="input-search"
+            style="font-weight: 400; color: #7c7c7c"
+            class="border-1 fst-italic fs-6 ps-5"
+            placeholder="Tìm kiếm bài viết" />
+        </div>
+        <nav class="w-100 col-11 d-flex justify-content-center align-items-center h-auto container">
+          <a
+            href="./"
+            style="font-weight: 700; color: #f1692f; font-size: 20px"
+            class="text-decoration-none align-items-center d-flex text-center text-wrap p-1"
+            >Chia sẻ kinh nghiệm</a
+          >
+          <span class="line-left"></span>
+          <a
+            href="./"
+            style="font-weight: 700; color: #f1692f; font-size: 20px"
+            class="text-decoration-none align-items-center d-flex text-center text-wrap p-1"
+            >Kiến thức chuyên môn</a
+          >
+          <span class="line-left"></span>
+          <a
+            href="./"
+            style="font-weight: 700; color: #f1692f; font-size: 20px"
+            class="text-decoration-none align-items-center d-flex text-center text-wrap p-1"
+            >MCI Careers</a
+          >
+          <span class="line-left"></span>
+
+          <a
+            href="./"
+            style="font-weight: 700; color: #f1692f; font-size: 20px"
+            class="text-decoration-none align-items-center d-flex text-center text-wrap p-1"
+            >Kinh nghiệm thực chiến</a
+          >
+          <span class="line-left"></span>
+
+          <a
+            href="./"
+            style="font-weight: 700; color: #f1692f; font-size: 20px"
+            class="text-decoration-none align-items-center d-flex text-center text-wrap p-1"
+            >Lịch khai giảng</a
+          >
+        </nav>
+      </section>
+      <section
+        class="align-items-center d-none d-lg-flex"
+        style="height: 60px; background-color: #f0f0f0; font-size: 16px; font-weight: 700">
+        <div
+          class="container"
+          style="color: #f1692f">
+          <span class=""
+            >Trang chủ
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="8"
+              height="13"
+              viewBox="0 0 8 13"
+              fill="none">
+              <path
+                d="M1 12L7 6.5L1 1"
+                stroke="#F1692F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </span>
+          <span class=""
+            >Blog
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="8"
+              height="13"
+              viewBox="0 0 8 13"
+              fill="none">
+              <path
+                d="M1 12L7 6.5L1 1"
+                stroke="#F1692F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </span>
+          <span class=""
+            >Chia sẻ kinh nghiệm
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="8"
+              height="13"
+              viewBox="0 0 8 13"
+              fill="none">
+              <path
+                d="M1 12L7 6.5L1 1"
+                stroke="#F1692F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </span>
+          <span>Bạn Nguyễn Quang Hưng - Học Data là 1 quá trình và mình đã vượt qua nó như nào</span>
+        </div>
+      </section>
+      <section class="container d-flex">
+        <div class="d-flex flex-column mt-4 gap-3">
+          <div class="img-lg-post_post px-3 overflow-hidden d-lg-none"></div>
+          <h5
+            class=""
+            style="color: #f1692f">
+            Bạn Nguyễn Quang Hưng - Học DATA là 1 quá trình và mình đã vượt qua nó như nào
+          </h5>
+          <p class="slider-text">
+            Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có
+            đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để
+            được vào ngành công nghệ thông tin như mong muốn mà chỉ...
+          </p>
+          <section
+            class="w-100 h-auto p-3 d-flex flex-column gap-3 rounded-3"
+            style="background-color: #f5f5f5">
+            <h3
+              class="text-uppercase d-flex text-center gap-2"
+              style="color: #f1692f">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 63 45"
+                fill="none">
+                <path
+                  d="M5 22.5H57.5"
+                  stroke="#F1692F"
+                  stroke-width="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M5 5H57.5"
+                  stroke="#F1692F"
+                  stroke-width="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M5 40H57.5"
+                  stroke="#F1692F"
+                  stroke-width="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              Nội dung bài viết
+            </h3>
+            <p>1.Nội dung bài viết</p>
+            <p>2.Nội dung bài viết</p>
+            <p>3.Nội dung bài viết</p>
+            <p>4.Nội dung bài viết</p>
+          </section>
+          <p class="slider-text">
+            Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có
+            đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để
+            được vào ngành công nghệ thông tin như mong muốn mà chỉ...
+          </p>
+          <p class="slider-text">
+            Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có
+            đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để
+            được vào ngành công nghệ thông tin như mong muốn mà chỉ...
+          </p>
+          <div class="img-lg-post_post px-3 overflow-hidden d-lg-block d-none"></div>
+
+          <p class="slider-text">
+            Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có
+            đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để
+            được vào ngành công nghệ thông tin như mong muốn mà chỉ...
+          </p>
+          <p class="slider-text">
+            Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em có
+            đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để
+            được vào ngành công nghệ thông tin như mong muốn mà chỉ...
+          </p>
+        </div>
+        <div class="d-lg-flex flex-column d-none col-4 position-relative ms-3 mt-4 justify-content-center">
+          <div class="w-full h-100 d-flex flex-column side-fixed p-4">
+            <span class="banner-fix"></span>
+            <section class="d-flex flex-column w-full mt-3">
+              <p style="color: #f1692f; font-weight: 700; font-size: 1rem">Các khóa học</p>
+              <div class="row w-100 justify-content-start ms-2 d-flex align-items-center">
+                <div class="col-4 line-evt"></div>
+              </div>
+              <ul class="d-flex flex-column">
+                <li class="menu-custom">
+                  Phân tích dữ liệu
+                  <ul class="d-flex flex-column d-none sub-menu-custom">
+                    <li>Phân tích dữ liệu</li>
+                    <li>Kĩ sư dữ liệu</li>
+                    <li>Khoa học dữ liệu</li>
+                    <li>Lập trình ứng dụng</li>
+                  </ul>
+                </li>
+                <li class="menu-custom">
+                  Kĩ sư dữ liệu
+                  <ul class="d-flex flex-column d-none sub-menu-custom">
+                    <li>Phân tích dữ liệu</li>
+                    <li>Kĩ sư dữ liệu</li>
+                    <li>Khoa học dữ liệu</li>
+                    <li>Lập trình ứng dụng</li>
+                  </ul>
+                </li>
+                <li class="menu-custom">
+                  Khoa học dữ liệu
+                  <ul class="d-flex flex-column d-none sub-menu-custom">
+                    <li>Phân tích dữ liệu</li>
+                    <li>Kĩ sư dữ liệu</li>
+                    <li>Khoa học dữ liệu</li>
+                    <li>Lập trình ứng dụng</li>
+                  </ul>
+                </li>
+                <li class="menu-custom">
+                  Lập trình ứng dụng
+                  <ul class="d-flex flex-column d-none sub-menu-custom">
+                    <li>Phân tích dữ liệu</li>
+                    <li>Kĩ sư dữ liệu</li>
+                    <li>Khoa học dữ liệu</li>
+                    <li>Lập trình ứng dụng</li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+            <form
+              style="background-color: #f1692f"
+              class="w-100 d-lg-flex flex-column text-white p-4 rounded-2 mb-4 mt-4 d-none"
+              action=""
+              method="get">
+              <p
+                class="text-uppercase text-center mb-4"
+                style="font-weight: 700; font-size: 24px">
+                Đăng kí tư vấn khóa học
+              </p>
+              <label for="name">Họ và tên</label>
+              <input
+                type="text"
+                name="name" />
+              <label for="email">Email</label>
+              <input
+                type="text"
+                name="email"
+                id="email" /><label for="numberphone">Số điện thoại</label>
+              <input
+                type="text"
+                name="numberphone" /><label for="learn">Khóa học mà bạn muốn tư vấn</label>
+              <input
+                type="text"
+                name="learn" />
+              <div class="d-flex justify-content-center">
+                <input
+                  type="submit"
+                  style="background-color: black; color: white; font-weight: 700; font-size: 10px"
+                  class="mt-4 w-50 text-uppercase p-2"
+                  value="Đăng kí tư vấn" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section
+        class="d-flex flex-column align-items-center mt-5 p-4 gap-2"
+        style="background-color: #f5f5f5">
+        <p style="color: #f1692f; font-weight: 700; font-size: 2rem">Các bài đăng liên quan</p>
+        <div class="row w-100 justify-content-center mt-2">
+          <div class="col-4 line-evt"></div>
+        </div>
+        <div
+          id="carouselExample"
+          class="carousel slide d-lg-none py-4">
+          <div class="carousel-inner">
+            <div class="carousel-item px-4 active">
+              <div class="img-post w-100 px-3 overflow-hidden"></div>
+              <h4
+                class="mt-3"
+                style="color: #f1692f">
+                Bạn Nguyễn Quang Hưng - Học DATA là 1 quá trình và mình đã vượt qua nó như nào
+              </h4>
+              <p class="slider-text">
+                Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em
+                có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu
+                chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...
+              </p>
+              <span
+                class="float-end"
+                style="color: #f1692f"
+                >Xem thêm</span
+              >
+            </div>
+            <div class="carousel-item px-4">
+              <div class="img-post w-100 px-3"></div>
+              <h4
+                class=""
+                style="color: #f1692f">
+                Bạn Nguyễn Quang Hưng - Học DATA là 1 quá trình và mình đã vượt qua nó như nào
+              </h4>
+              <p class="">
+                Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em
+                có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu
+                chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...
+              </p>
+              <span
+                class="float-end"
+                style="color: #f1692f"
+                >Xem thêm</span
+              >
+            </div>
+            <div class="carousel-item px-4">
+              <div class="img-post w-100 px-3"></div>
+              <h4
+                class=""
+                style="color: #f1692f">
+                Bạn Nguyễn Quang Hưng - Học DATA là 1 quá trình và mình đã vượt qua nó như nào
+              </h4>
+              <p class="">
+                Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em
+                có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu
+                chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...
+              </p>
+              <span
+                class="float-end"
+                style="color: #f1692f"
+                >Xem thêm</span
+              >
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev">
+            <span
+              class="carousel-control-prev-icon top-0"
+              aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next">
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <ul class="d-none w-100 d-lg-flex gap-4 mt-5">
+          <li class="d-flex flex-column w-100 gap-4">
+            <div class="add-post px-3 overflow-hidden"></div>
+            <div class="d-flex flex-column">
+              <h5
+                class=""
+                style="color: #f1692f">
+                Bạn Nguyễn Quang Hưng - Học DATA là 1 quá trình và mình đã vượt qua nó như nào
+              </h5>
+              <p class="slider-text">
+                Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em
+                có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu
+                chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...
+              </p>
+              <div class="d-flex justify-content-end">
+                <span
+                  class=""
+                  style="color: #f1692f"
+                  >Xem thêm</span
+                >
+              </div>
+            </div>
+          </li>
+          <li class="d-flex flex-column w-100 gap-4">
+            <div class="add-post px-3 overflow-hidden"></div>
+            <div class="d-flex flex-column">
+              <h5
+                class=""
+                style="color: #f1692f">
+                Bạn Nguyễn Quang Hưng - Học DATA là 1 quá trình và mình đã vượt qua nó như nào
+              </h5>
+              <p class="slider-text">
+                Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em
+                có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu
+                chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...
+              </p>
+              <div class="d-flex justify-content-end">
+                <span
+                  class=""
+                  style="color: #f1692f"
+                  >Xem thêm</span
+                >
+              </div>
+            </div>
+          </li>
+          <li class="d-flex flex-column w-100 gap-4">
+            <div class="add-post px-3 overflow-hidden"></div>
+            <div class="d-flex flex-column">
+              <h5
+                class=""
+                style="color: #f1692f">
+                Bạn Nguyễn Quang Hưng - Học DATA là 1 quá trình và mình đã vượt qua nó như nào
+              </h5>
+              <p class="slider-text">
+                Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn ngữ lập trình. Sau đó, em
+                có đăng ký nguyện vọng thi đại học vào các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu
+                chí để được vào ngành công nghệ thông tin như mong muốn mà chỉ...
+              </p>
+              <div class="d-flex justify-content-end">
+                <span
+                  class=""
+                  style="color: #f1692f"
+                  >Xem thêm</span
+                >
+              </div>
+            </div>
+          </li>
+        </ul>
+        <form
+          style="background-color: #f1692f"
+          class="w-100 d-flex flex-column text-white p-4 rounded-2 mb-4 mt-4 d-lg-none"
+          action=""
+          method="get">
+          <p
+            class="text-uppercase text-center mb-4"
+            style="font-weight: 700; font-size: 24px">
+            Đăng kí tư vấn khóa học
+          </p>
+          <label for="name">Họ và tên</label>
+          <input
+            type="text"
+            name="name" />
+          <label for="email">Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email" /><label for="numberphone">Số điện thoại</label>
+          <input
+            type="text"
+            name="numberphone" /><label for="learn">Khóa học mà bạn muốn tư vấn</label>
+          <input
+            type="text"
+            name="learn" />
+          <div class="d-flex justify-content-center">
+            <input
+              type="submit"
+              style="background-color: black; color: white; font-weight: 700"
+              class="mt-4 w-50 text-uppercase p-2"
+              value="Đăng kí tư vấn" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer
+      style="background-color: #3e3e3e"
+      class="text-white">
+      <div class="container">
+        <div class="row flex-wrap d-flex">
+          <div class="col-6 col-lg-3 d-flex flex-column gap-2 p-4">
+            <h3 class="text-uppercase">Hà Nội</h3>
+            <span
+              class=""
+              style="height: 6px; width: 30%; background-color: #fff; border-radius: 20px"></span>
+            <section class="d-flex flex-column gap-3 text-12">
+              <div class="d-flex flex-column gap-0">
+                <p class="">165 Thái Hà</p>
+                <p>Hotline: 024 7106 8368</p>
+                <p>Địa chỉ: Tầng 6, Số 5, Ngách 23, Ngõ 165 Thái Hà, Phường Láng Hạ, Quận Đống Đa, Thành phố Hà Nội, Việt Nam</p>
+              </div>
+              <div class="d-flex flex-column gap-0">
+                <p class="">30 Trung Liệt</p>
+
+                <p>Hotline: 024 7106 8368</p>
+                <p>Địa chỉ: Số 30, Trung Liệt, Phường Trung Liệt, Quận Đống Đa, Thành phố Hà Nội, Việt Nam</p>
+              </div>
+            </section>
+          </div>
+          <div class="col-6 col-lg-3 d-flex flex-column gap-2 p-4">
+            <h3 class="text-uppercase">Hồ Chí Minh</h3>
+            <span
+              class=""
+              style="height: 6px; width: 30%; background-color: #fff; border-radius: 20px"></span>
+            <section class="d-flex flex-column gap-3 text-12">
+              <div class="d-flex flex-column gap-0">
+                <p class="">HCM - 13 Cao Thắng</p>
+                <p>Hotline: 024 7106 8368</p>
+                <p>Địa chỉ: 13 Cao Thắng, Phường 2, Quận 3, Tp. HCM</p>
+              </div>
+              <div class="d-flex flex-column gap-0">
+                <p class="">HCM - 224 Điện Biên Phủ</p>
+
+                <p>Hotline: 024 7106 8368</p>
+                <p>Địa chỉ: Tầng 4 & Tầng 6, 224 Điện Biên Phủ, Phường Võ Thị Sáu, Quận 3, Thành phố Hồ Chí Minh, Việt Nam</p>
+              </div>
+              <div class="d-flex flex-column gap-0">
+                <p class="">HCM - 677/6 Điện Biên Phủ</p>
+
+                <p>Hotline: 024 7106 8368</p>
+                <p>Địa chỉ: Tầng 4, Yoko Building 677/6, Điện Biên Phủ, Phường 25, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam</p>
+              </div>
+            </section>
+          </div>
+          <div class="col-6 col-lg-3 d-flex flex-column gap-2 p-4">
+            <h3 class="text-uppercase">Hotline</h3>
+            <span
+              class=""
+              style="height: 6px; width: 30%; background-color: #fff; border-radius: 20px"></span>
+            <section class="d-flex flex-column gap-3 text-12">
+              <div class="d-flex flex-column gap-0">
+                <p class="">Khiếu nại CEO: 0982 521 378</p>
+                <p>Khiếu nại DCEO: 0916 442 368</p>
+                <p>Hợp tác truyền thông: 0934 146 016</p>
+                <p class="">Hợp tác kinh doanh: 0961 123 988</p>
+                <p>Khiếu nại dịch vụ CSKH: 024 7106 8368</p>
+                <p>Tư vấn khóa học 1 Ms. Khánh Ly: 0352 433 233</p>
+                <p>Tư vấn khóa học 2 Ms. Ngọc Linh: 0344 463 698</p>
+                <p>CSKH: cskh@mcivietnam.com</p>
+              </div>
+            </section>
+          </div>
+          <div class="col-6 col-lg-3 d-flex flex-column gap-2 p-4">
+            <h3 class="text-uppercase">Fanpage MCI</h3>
+            <span
+              class=""
+              style="height: 6px; width: 30%; background-color: #fff; border-radius: 20px"></span>
+            <img
+              src="./assets/images/footer/Facebook.png"
+              alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./main.js"></script>
+</html>

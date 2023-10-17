@@ -1,0 +1,159 @@
+:root {
+  --full-width-: 100vw;
+}
+
+main {
+  padding-top: 56px;
+}
+
+input {
+  outline: none;
+  border: 0px solid;
+}
+p {
+  margin: 0 !important;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+#main-header {
+  height: 5vh;
+}
+#banner-img {
+  background: url('../images/banner/mobile-banner.jfif') lightgray 50% / cover no-repeat;
+}
+#banner-img-pc {
+  background: url('../images/banner/pc-banner.png') lightgray 50% / cover no-repeat;
+  height: 500px;
+}
+#input-search {
+  width: 95%;
+  height: 2rem;
+  outline: none;
+  padding: 0 40px 0 80px;
+  border-radius: 21.5px;
+}
+.line-left {
+  width: 1px;
+  height: 30px;
+  background-color: #7e7e7e;
+}
+.span-search {
+  left: 5%;
+}
+.icon-search {
+  height: 13%;
+  width: 13%;
+}
+input:focus ~ .span-search {
+  display: none;
+}
+.img-post {
+  height: 300px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+}
+.img-lg-post {
+  height: 175px;
+  width: 200%;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+}
+.slider-text {
+  -webkit-line-clamp: 5;
+  text-align: justify;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+.line-evt {
+  background-color: orange;
+  border-radius: 20px;
+  height: 6px;
+  margin-bottom: 20px;
+}
+.evt-img {
+  height: 40vw;
+  border-radius: 20px;
+}
+.programs {
+  height: 600px;
+  padding: 2px;
+  margin-bottom: 10px;
+}
+.programs > p {
+  -webkit-line-clamp: 10;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+.img-programs {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f1692f;
+}
+.text-justify {
+  text-align: justify !important;
+}
+.text-12 {
+  font-size: 12px;
+}
+/* Custom Next and Prev */
+.carousel-control-prev,
+.carousel-control-next {
+  height: 50px !important;
+  top: 100px !important;
+}
+
+/* Noi dung CSS */
+
+.img-lg-post_post {
+  width: 100%;
+  height: 300px;
+  background-color: #f1692f;
+}
+form > input {
+  height: 35px;
+}
+.add-post {
+  width: 100%;
+  height: 300px;
+  background-color: #f1692f;
+  border-radius: 20px;
+}
+.banner-fix {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  background-color: #f1692f;
+}
+.side-fixed {
+  top: 10vh;
+}
+.menu-custom {
+  padding: 8px;
+  border-bottom: 1px dashed #000;
+}
+/* Custom Media Laptop */
+@media only screen and (min-width: 992px) {
+  .evt-bg {
+    background-color: #fff !important;
+  }
+  .evt-img {
+    height: 300px;
+  }
+
+  #main-header {
+    height: 10vh;
+  }
+  .library-img {
+    background-color: #f2f0f0 !important;
+  }
+  .img-lg-post_post {
+    height: 500px;
+  }
+}
